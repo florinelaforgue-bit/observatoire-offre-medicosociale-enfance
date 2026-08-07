@@ -81,3 +81,16 @@ Il est enrichi progressivement à partir des artefacts du projet.
   compléter)*                                                       
 
   ------------------------------------------------------------------------
+
+# 15. Questions ouvertes
+
+Cette section recense les questions qui sont apparues pendant le
+développement mais qui nécessitent des travaux futurs.
+
+Pour chacune :
+
+- contexte ;
+- pourquoi la question est importante ;
+- état actuel ;
+- quelles données seraient nécessaires ;
+- publication(s) potentiellement concernée(s).
