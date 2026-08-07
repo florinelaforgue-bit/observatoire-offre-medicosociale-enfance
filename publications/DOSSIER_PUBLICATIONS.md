@@ -15,6 +15,48 @@
   - **Maturité scientifique** : Hypothèse / Contribution identifiée / Démonstration en cours / Démontrée / Publiée.
 - Lorsqu'un élément n'est pas suffisamment démontré, le laisser volontairement incomplet.
 
+- ## Hiérarchie des preuves
+
+Toute affirmation inscrite dans ce carnet doit être classée selon la hiérarchie suivante.
+
+### Artefact démontré
+
+Existence d'un élément objectivement établi par un ou plusieurs artefacts identifiés.
+
+Exemples :
+- document d'architecture ;
+- contrat d'interface ;
+- implémentation ;
+- protocole expérimental ;
+- rapport de validation.
+
+Un artefact démontre uniquement son existence et son contenu. Il ne constitue pas, à lui seul, une contribution scientifique.
+
+### Propriété démontrée
+
+Propriété objectivement établie par une validation empirique ou une démonstration formelle documentée.
+
+Exemples :
+- déterminisme ;
+- mémoire bornée ;
+- absence de perte ;
+- exhaustivité ;
+- reproductibilité démontrée.
+
+Une propriété démontrée peut s'appuyer sur plusieurs artefacts.
+
+### Contribution scientifique
+
+Connaissance généralisable soutenue par plusieurs propriétés démontrées.
+
+Une contribution scientifique ne correspond pas à une décision d'implémentation ni à une caractéristique particulière du code. Elle doit être formulée à un niveau d'abstraction permettant d'être réutilisée, discutée ou comparée dans la littérature scientifique.
+
+Une contribution ne peut être considérée comme démontrée que si les trois conditions suivantes sont simultanément satisfaites :
+
+1. elle est explicitement étayée par un ou plusieurs artefacts identifiés ;
+2. elle repose sur une validation empirique ou une démonstration formelle documentée ;
+3. elle est formulée à un niveau d'abstraction suffisant pour constituer une véritable contribution scientifique ou méthodologique.
+
 ---
 
 # 0. Vision scientifique du projet
@@ -37,6 +79,14 @@ Construire un observatoire national reproductible de l'offre médico-sociale fra
 La démonstration scientifique de la nécessité de cet observatoire sera étayée par la revue de littérature.
 
 ---
+
+> **Important**
+>
+> Les contributions recensées dans cette section ne correspondent pas à des composants logiciels mais à des connaissances scientifiques ou méthodologiques.
+>
+> Une architecture, un algorithme ou un contrat d'interface peuvent constituer des artefacts ou démontrer certaines propriétés sans pour autant constituer eux-mêmes une contribution scientifique.
+>
+> Cette section est volontairement conservatrice. En cas de doute, une contribution reste "en cours de démonstration".
 
 # 1. Contributions scientifiques originales
 
@@ -210,13 +260,23 @@ Section volontairement incomplète.
 
 # 14. Tableau de bord scientifique
 
+Le tableau de bord suit uniquement les contributions scientifiques et méthodologiques.
+
+Les artefacts démontrés et les propriétés démontrées servent de preuves mais ne sont pas assimilés à des contributions.
+
+Le passage d'une contribution au statut **« démontrée »** nécessite obligatoirement :
+
+- des artefacts identifiés ;
+- une validation empirique ou une démonstration formelle documentée ;
+- une formulation généralisable indépendante des choix d'implémentation.
+
 | ID | Contribution | Preuve | Maturité technique | Maturité scientifique | Publication cible |
 |---|---|---|---|---|---|
 | C-01 | Observatoire reproductible | En cours | Implémenté | Contribution identifiée | Article méthodologique |
 | C-02 | Découplage acquisition/modèle | Démontré (architecture) | Implémenté | Démonstration en cours | Data engineering |
 | M-01 | Schéma pivot | Démontré | Implémenté | Démonstration en cours | Méthodologie |
 | M-02 | Architecture modulaire | Démontré | Implémenté | Contribution identifiée | Méthodologie |
-
+  
 ---
 
 # 15. Journal des décisions scientifiques
@@ -248,6 +308,16 @@ Cette section constitue le registre des décisions structurantes du projet. Les 
 - **Conséquences** : Les futurs artefacts alimenteront ce carnet plutôt que de modifier sa structure.
 - **Évolution du niveau de preuve** : Décision de gouvernance scientifique.
 
+### D-002
+
+- **Date / période** : Phase de conception du carnet de valorisation scientifique
+- **Statut** : Active
+- **Contexte** : Les premières versions du carnet montraient un risque de confusion entre architecture logicielle, propriétés démontrées et véritables contributions scientifiques.
+- **Décision prise** : Adopter une hiérarchie explicite des preuves distinguant les artefacts, les propriétés démontrées et les contributions scientifiques.
+- **Motivation scientifique** : Garantir un niveau élevé de rigueur documentaire et éviter toute surestimation de la portée scientifique du projet.
+- **Conséquences sur le projet** : Toute nouvelle contribution devra être évaluée selon cette hiérarchie et pourra être réévaluée à mesure que de nouvelles validations seront produites.
+- **Évolution du niveau de preuve** : Décision de gouvernance scientifique.
+
 ---
 
 # 16. Chronologie du projet
@@ -277,6 +347,13 @@ Chronologie synthétique de la genèse et de l'évolution scientifique du projet
 - **Nature** : Scientifique / Méthodologique
 - **Artefacts** : Documentation de vision, architecture et feuille de route.
 - **Niveau de preuve** : Démontré par les artefacts documentaires.
+
+### J-003
+
+- **Événement** : Adoption d'une hiérarchie formelle des preuves scientifiques pour le carnet de valorisation.
+- **Nature** : Gouvernance scientifique
+- **Artefacts associés** : DOSSIER_PUBLICATIONS.md
+- **Conséquences scientifiques** : Le carnet devient un registre de preuves où les contributions ne peuvent être qualifiées de démontrées qu'après validation documentaire, empirique et scientifique.
 
 ---
 
