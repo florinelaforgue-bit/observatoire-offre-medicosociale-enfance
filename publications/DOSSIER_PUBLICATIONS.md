@@ -57,6 +57,38 @@ Une contribution ne peut être considérée comme démontrée que si les trois c
 2. elle repose sur une validation empirique ou une démonstration formelle documentée ;
 3. elle est formulée à un niveau d'abstraction suffisant pour constituer une véritable contribution scientifique ou méthodologique.
 
+## Chaîne de valorisation scientifique
+
+Le carnet suit la chaîne logique de production des connaissances du projet :
+
+**Artefacts → Propriétés démontrées → Contributions scientifiques → Questions scientifiques rendues possibles → Publications**
+
+Chaque niveau dépend du précédent :
+
+- les **artefacts** documentent objectivement le projet ;
+- les **propriétés démontrées** sont établies par des validations empiriques ou des démonstrations formelles ;
+- les **contributions scientifiques** généralisent plusieurs propriétés démontrées ;
+- les **questions scientifiques rendues possibles** découlent des contributions et définissent les nouvelles connaissances que l'observatoire permet d'étudier ;
+- les **publications** répondent à ces questions scientifiques.
+
+Ainsi, une publication ne constitue pas la preuve d'une contri## Gouvernance du carnet
+
+À compter de la stabilisation de cette version, la structure conceptuelle du présent carnet est considérée comme **gelée**.
+
+Les évolutions ultérieures portent exclusivement sur l'enrichissement du contenu scientifique à partir des artefacts produits par le projet.
+
+En particulier, les mises à jour consistent uniquement à :
+
+- ajouter de nouveaux artefacts ;
+- documenter de nouvelles propriétés démontrées ;
+- réévaluer le niveau de preuve de contributions existantes lorsque de nouvelles validations le justifient ;
+- identifier de nouvelles contributions scientifiques ;
+- enrichir les questions scientifiques rendues possibles ;
+- préparer progressivement les futures publications.
+
+Toute modification de la structure ou de la gouvernance du carnet constitue une décision scientifique exceptionnelle et doit être documentée dans le Journal des décisions scientifiques.bution. Elle représente la formalisation scientifique des réponses apportées à des questions rendues accessibles par les contributions développées au cours du projet.
+
+
 ---
 
 # 0. Vision scientifique du projet
@@ -159,6 +191,10 @@ Séparation explicite entre les producteurs de données et le modèle scientifiq
 
 # 3. Stratégie de publication
 
+> La stratégie de publication est construite à partir des questions scientifiques rendues possibles par les contributions démontrées ou en cours de démonstration.
+>
+> Les publications ne constituent pas une finalité indépendante du projet : elles représentent la formalisation des connaissances produites en réponse à des questions scientifiques devenues accessibles grâce à l'infrastructure développée.
+
 | Publication | État |
 |---|---|
 | Article méthodologique décrivant l'infrastructure | Préparation |
@@ -168,6 +204,12 @@ Séparation explicite entre les producteurs de données et le modèle scientifiq
 ---
 
 # 4. Questions scientifiques rendues possibles
+
+> Cette section occupe une position centrale dans la stratégie de valorisation.
+>
+> Les questions recensées ici ne sont ni des résultats ni des hypothèses de publication. Elles représentent les questions scientifiques qui deviennent investigables grâce aux contributions méthodologiques et scientifiques développées par le projet.
+>
+> Une même contribution peut rendre possibles plusieurs questions scientifiques, et une même question peut conduire à plusieurs publications.
 
 Questions identifiées (sans résultats) :
 
@@ -270,6 +312,14 @@ Le passage d'une contribution au statut **« démontrée »** nécessite obligat
 - une validation empirique ou une démonstration formelle documentée ;
 - une formulation généralisable indépendante des choix d'implémentation.
 
+### Lecture du tableau de bord
+
+Le tableau de bord suit la progression scientifique du projet selon la chaîne de valorisation :
+
+Artefacts → Propriétés démontrées → Contributions → Questions scientifiques → Publications
+
+Le tableau ne suit donc pas uniquement l'état des contributions, mais leur capacité progressive à produire de nouvelles connaissances scientifiques.
+
 | ID | Contribution | Preuve | Maturité technique | Maturité scientifique | Publication cible |
 |---|---|---|---|---|---|
 | C-01 | Observatoire reproductible | En cours | Implémenté | Contribution identifiée | Article méthodologique |
@@ -299,7 +349,7 @@ Cette section constitue le registre des décisions structurantes du projet. Les 
 
 ### D-001
 
-- **Date / période** : Phase de conception de la V1
+- **Date / période** : 07/08/2026 / Phase de conception de la V1
 - **Statut** : Active
 - **Contexte** : Structuration de la stratégie de valorisation scientifique.
 - **Décision prise** : Adopter un carnet de valorisation scientifique vivant comme document de référence du projet.
@@ -310,12 +360,33 @@ Cette section constitue le registre des décisions structurantes du projet. Les 
 
 ### D-002
 
-- **Date / période** : Phase de conception du carnet de valorisation scientifique
+- **Date / période** : 07/08/2026 / Phase de conception du carnet de valorisation scientifique
 - **Statut** : Active
 - **Contexte** : Les premières versions du carnet montraient un risque de confusion entre architecture logicielle, propriétés démontrées et véritables contributions scientifiques.
 - **Décision prise** : Adopter une hiérarchie explicite des preuves distinguant les artefacts, les propriétés démontrées et les contributions scientifiques.
 - **Motivation scientifique** : Garantir un niveau élevé de rigueur documentaire et éviter toute surestimation de la portée scientifique du projet.
 - **Conséquences sur le projet** : Toute nouvelle contribution devra être évaluée selon cette hiérarchie et pourra être réévaluée à mesure que de nouvelles validations seront produites.
+- **Évolution du niveau de preuve** : Décision de gouvernance scientifique.
+
+### D-003
+
+- **Date / période** : 07/08/2026 / Stabilisation de la gouvernance scientifique du carnet
+- **Statut** : Active
+- **Contexte** : Clarification de la relation entre contributions scientifiques et publications.
+- **Décision prise** : Adopter une chaîne de valorisation distinguant explicitement les artefacts, les propriétés démontrées, les contributions scientifiques, les questions scientifiques rendues possibles et les publications.
+- **Motivation scientifique** : Aligner la structure du carnet sur la logique de production des connaissances en recherche et éviter d'assimiler les publications aux contributions elles-mêmes.
+- **Conséquences sur le projet** : Les futures publications seront systématiquement rattachées aux questions scientifiques auxquelles elles répondent, elles-mêmes reliées aux contributions qui les rendent possibles.
+- **Évolution du niveau de preuve** : Décision de gouvernance scientifique.
+
+### D-004
+
+- **Date / période** : 07/08/2026 / Stabilisation de la gouvernance du carnet
+- **Statut** : Active
+- **Contexte** : Après plusieurs itérations, la structure conceptuelle du carnet est jugée suffisamment mature pour accompagner l'ensemble du projet.
+- **Décision prise** : Geler définitivement la gouvernance et l'architecture conceptuelle du DOSSIER_PUBLICATIONS.md.
+- **Motivation scientifique** : Garantir la stabilité de la traçabilité scientifique sur toute la durée du projet et éviter que les évolutions du carnet ne modifient a posteriori les critères d'évaluation des contributions.
+- **Artefacts justificatifs** : DOSSIER_PUBLICATIONS.md
+- **Conséquences sur le projet** : Les évolutions futures concerneront exclusivement l'enrichissement des sections existantes à partir des nouveaux artefacts.
 - **Évolution du niveau de preuve** : Décision de gouvernance scientifique.
 
 ---
@@ -354,6 +425,13 @@ Chronologie synthétique de la genèse et de l'évolution scientifique du projet
 - **Nature** : Gouvernance scientifique
 - **Artefacts associés** : DOSSIER_PUBLICATIONS.md
 - **Conséquences scientifiques** : Le carnet devient un registre de preuves où les contributions ne peuvent être qualifiées de démontrées qu'après validation documentaire, empirique et scientifique.
+
+### J-004
+
+- **Événement** : Gel définitif de la gouvernance et de l'architecture conceptuelle du carnet de valorisation scientifique.
+- **Nature** : Gouvernance scientifique
+- **Artefacts associés** : DOSSIER_PUBLICATIONS.md
+- **Conséquences scientifiques** : Le carnet devient le registre scientifique de référence du projet. Toute évolution ultérieure concerne exclusivement son enrichissement documentaire.
 
 ---
 
